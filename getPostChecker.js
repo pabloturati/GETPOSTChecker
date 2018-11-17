@@ -21,7 +21,7 @@ app.engine("handlebars", handlebars.engine);
 app.set("view engine", "handlebars");
 
 //Set port
-app.set("port", 3000);
+app.set("port", 8507);
 
 //Get Request handler
 app.get("/", (req, res) => {
