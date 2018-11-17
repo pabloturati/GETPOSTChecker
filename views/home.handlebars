@@ -1,0 +1,18 @@
+<h1>Pablo Turati's HW Get Post Checker</h1>
+
+<h1> You got a {{serverVerb}} request.</h1>
+<h3> You may send parameters to see them below.</h3>
+
+{{#if paramList}}
+<h2>The list of params received is</h2>
+<ul>
+    {{#each paramList}}
+    <li>{{this.name}} : {{this.content}}</li>
+    {{/each}}
+</ul>
+{{/if}}
+
+{{!-- This line sends the output to the client (browser) console --}}
+<script>
+    console.log(`{{{ serverVerb }}}`);
+</script>
